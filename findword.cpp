@@ -38,8 +38,8 @@ int main(){
         cout<<endl;
     }
   int jumlahkata;
-    cout<<"Semangatt mencari katanyaa!! ^^"<<endl;
-    cout<<"Masukkan jumlah kata yang ingin kamu cari ="<<endl;
+    cout<<"\n\n\nSemangatt mencari katanyaa!! ^^"<<endl;
+    cout<<"Masukkan jumlah kata yang ingin kamu cari =";
     cin>>jumlahkata;
       int hsl[jumlahkata],ok[jumlahkata],pjg[jumlahkata];
       char word[jumlahkata] [15];
