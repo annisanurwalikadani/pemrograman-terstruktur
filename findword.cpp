@@ -1,6 +1,7 @@
 #include<iostream>
 #include<cstring>
 using namepace std;
+
 int cari_kata(*(word));
 {
   int pjg,cek,hasil;
@@ -44,6 +45,16 @@ int cari_kata(*(word));
                 hasil+=0;
               }
               cek=0;
+  
+  
+  
+  int pjg,cek,hasil,batas;
+  cout<<"                 ====================================================================================="<<endl;
+  cout<<"                 =____________________________________RANGKA_HURUF___________________________________="<<endl;
+  cout<<"                 ====================================================================================="<<endl;
+  cout<<endl<<endl;
+  char kata[15][15]={ {'t','g','b','w','w'.'i','n','t','e','r','w','s','e','s','n'},
+                     
   
  
                   
