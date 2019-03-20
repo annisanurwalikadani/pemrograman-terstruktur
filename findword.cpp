@@ -1,11 +1,11 @@
 #include<iostream>
 #include<cstring>
-using namepace std;
-int cari_kata(*(word));
+using namespace std;
+int cari_kata(char*(word))
 {
   int pjg,cek,hasil;
   hasil=0;
-  pjg=strln(word);
+  pjg=strlen(word);
   char kata[15][15]={ {'t','g','b','w','w','i','n','t','e','r','w','s','e','s','n'},
                      {'a','a','u','n','t','t','m','m','h','f','o','o','d','n','b'},
                      {'j','l','w','c','q','l','d','z','m','p','m','v','d','m','r'},
@@ -24,20 +24,24 @@ int cari_kata(*(word));
                     };
                   for (int i=0;i<15;i++){
                     for (int j=0;j<15;j++){
-                      if (word[0]==kata[i][j]{
+                      if (word[0]==kata[i][j]){
                         
   //HORIZONTAL KE KANAN (dari kiri kekanan)
-                        for (int k=0;k<pjg;k++){
-                          if (word[k]==kata[i][j+k]){
-                            cek=k;
-                          }
-                          else{
-                            break;
-                          }
-                          else{
-                            hasil+=0;
-                          }
-                          cek=0;
+                       for (int k=0;k<pjg;k++){
+					               if (word[k]==kata[i][j+k]){
+					                 cek=k;
+					               }
+					               else{
+						               break;
+					               }
+			                 }
+				               if (cek==pjg-1){
+					               hasil+=1;
+				               }
+				               else{
+					                hasil+=0;
+				               }
+				               cek=0;
                           
   //HORIZONTAL KE KIRI (dari kanan ke kiri)
                           for (int k=0;k<pjg;k++){
