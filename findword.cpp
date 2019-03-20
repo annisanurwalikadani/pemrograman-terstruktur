@@ -26,6 +26,7 @@ int main(){
         cout<<*(*(F+baris)+kolom)<<"||";
         cout<<endl;
     }
+  cout<<"=======================_TERIMA_KASIH_======================="<<endl<<endl;
 
 return 0; 
 }
