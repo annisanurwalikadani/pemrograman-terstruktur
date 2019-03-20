@@ -6,6 +6,13 @@ int main(){
   cout<<"==================================================================="<<endl;
   cout<<"                     Tugas Pemrograman Terstruktur                ="<<endl;
   cout<<"==================================================================="<<endl;
+  cout<<"=                                                                 ="<<endl;
+  cout<<"=  Nama : 1. Suci Hikmawati          (1817051033)                 ="<<endl;
+  cout<<"=         2. Annisa Nurwalikadani    (1817051037)                 ="<<endl;
+  cout<<"=         3. Syela Septania          (1817051058)                 ="<<endl;
+  cout<<"=         4. Rika Ningtias Azhari    (1817051073)                 ="<<endl;
+  cout<<"=                                                                 ="<<endl;
+  cout<<"==================================================================="<<endl;
   
   char B1[] = {'t','g','b','w','w','i','n','t','e','r','w','s','e','s','n'};
   char B2[] = {'a','a','u','n','t','t','m','m','h','f','o','o','d','n','b'};
@@ -30,6 +37,10 @@ int main(){
         cout<<*(*(F+baris)+kolom)<<"||";
         cout<<endl;
     }
+  int jumlahkata;
+  cout<<"Semangatt menvari katanyaa!! ^^"<<endl;
+  cout<<"Masukkan jumlah kata yang ingin kamu cari ="<<endl;
+  
   cout<<"=====================_TERIMA_KASIH_==============================="<<endl<<endl;
 
 return 0; 
