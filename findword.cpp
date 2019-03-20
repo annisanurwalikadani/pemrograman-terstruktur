@@ -38,11 +38,18 @@ int main(){
         cout<<endl;
     }
   int jumlahkata;
-  cout<<"Semangatt mencari katanyaa!! ^^"<<endl;
-  cout<<"Masukkan jumlah kata yang ingin kamu cari ="<<endl;
-  cin>>jumlahkata;
-  int hsl[jumlahkata],ok[jumlahkata],pjg[jumlahkata];
-  char word[jumlahkata] [15];
+    cout<<"Semangatt mencari katanyaa!! ^^"<<endl;
+    cout<<"Masukkan jumlah kata yang ingin kamu cari ="<<endl;
+    cin>>jumlahkata;
+      int hsl[jumlahkata],ok[jumlahkata],pjg[jumlahkata];
+      char word[jumlahkata] [15];
+  
+  cin.ignore();
+  for (int baris=0;baris<jumlahkata;baris++){
+    cout<<baris+1<<". ";
+    cin.getline(word[baris],15);
+    pjg[baris]=strlen(word[baris]);
+  }
   
   
   cout<<"=====================_TERIMA_KASIH_==============================="<<endl<<endl;
