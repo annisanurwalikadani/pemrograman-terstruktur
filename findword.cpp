@@ -28,20 +28,20 @@ int cari_kata(char*(word))
                         
   //HORIZONTAL KE KANAN (dari kiri kekanan)
                        for (int k=0;k<pjg;k++){
-					               if (word[k]==kata[i][j+k]){
-					                 cek=k;
-					               }
-					               else{
-						               break;
-					               }
-			                 }
-				               if (cek==pjg-1){
-					               hasil+=1;
-				               }
-				               else{
-					                hasil+=0;
-				               }
-				               cek=0;
+			if (word[k]==kata[i][j+k]){
+			  cek=k;
+			}
+			else{
+			  break;
+			}
+		       }
+			if (cek==pjg-1){
+			  hasil+=1;
+			}
+			else{
+			  hasil+=0;
+			}
+			cek=0;
                           
   //HORIZONTAL KE KIRI (dari kanan ke kiri)
                           for (int k=0;k<pjg;k++){
@@ -79,21 +79,22 @@ int cari_kata(char*(word))
                   cek=0;
   
   //  VERTIKA KEATAS (dari bawah keatas)
-                for (int k=0;k<pjg;k++){
-                  if (word[k]==kata[i-k]){
-                    cek=k;
-                  }
-                  else{
-                    break;
-                  }
-                }
-                if (cek==pjg-1){
-                  hasil+=1;
-                }
-                else{
-                  hasil+=0;
-                }
-                cek=0;
+	       for (int k=0;k<pjg;k++){
+		  if (word[k]==kata[i-k][j]){
+		   cek=k;
+		}
+		else{
+		  break;
+		}
+	       }
+		if (cek==pjg-1){
+		   hasil+=1;
+		}	
+		else{
+		   hasil+=0;
+		}
+			cek=0;
+			      
   // DIAGONAL KANAN ATAS (Dari bawah ke atas)
               for (int k=0;k<pjg;k++){
                 if (word[k]==kata[i-k][j+k]){
@@ -131,8 +132,6 @@ int cari_kata(char*(word))
       }
     }
                 
-             
-  
               if(hasil>0){
                 cout<<"ADA"<<endl;
               }
@@ -141,7 +140,7 @@ int cari_kata(char*(word))
                 }
 }
    
-                //Program nti
+                //Program Inti
                 int main()
                 {
                   cout<<"       =========================================================="<<endl;
@@ -176,9 +175,18 @@ int cari_kata(char*(word))
                                         {'p','d','c','r','z','m','s','n','g','r','d','n','r','p','z'},
                                         {'o','h','n','k','z','w','a','t','e','r','j','g','t','r','a'}
                                       };
-                  
-                     
-                                             
+			
+		for(int i=0;i<15;i++){
+			for (int j=0;j<15;j++){
+				cout<<kata[i][j]<<" ";
+			}
+			cout<<endl;
+		}
+			cout<<endl;
+			cout<<"\nBanyak Kata : ";
+			cin>>batas;
+	
+			char word[batas][15];                           
                   
                   //Input Katanya
                   for (int i=0;i<batas;i++){
@@ -202,12 +210,4 @@ int cari_kata(char*(word))
                   cout<<"          =================================================================="<<endl;
                   
                 return 0;
-                }
-                 
-  
- 
-                  
-  
-
-
-
+		}
