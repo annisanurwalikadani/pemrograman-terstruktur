@@ -128,9 +128,6 @@ int cari_kata(*(word));
                 hasil+=0;
               }
                   cek=0;
-          }
-      }
-    }
 
   // DIAGONAL KIRI ATAS (dari bawah keatas)
 				for (int k=0;k<pjg;k++){
