@@ -3,6 +3,10 @@
 using namespace std;
 int main(){
 
+  cout<<"==================================================================="<<endl;
+  cout<<"                     Tugas Pemrograman Terstruktur                ="<<endl;
+  cout<<"==================================================================="<<endl;
+  
   char B1[] = {'t','g','b','w','w','i','n','t','e','r','w','s','e','s','n'};
   char B2[] = {'a','a','u','n','t','t','m','m','h','f','o','o','d','n','b'};
   char B3[] = {'j','l','w','c','q','l','d','z','m','p','m','v','d','m','r'};
@@ -26,7 +30,6 @@ int main(){
         cout<<*(*(F+baris)+kolom)<<"||";
         cout<<endl;
     }
-  cout<<"=======================_TERIMA_KASIH_======================="<<endl<<endl;
 
 return 0; 
 }
