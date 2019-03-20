@@ -6,8 +6,7 @@ int cari_kata(*(word));
   int pjg,cek,hasil;
   hasil=0;
   pjg=strln(word);
-  
-   char kata[15][15]={ {'t','g','b','w','w','i','n','t','e','r','w','s','e','s','n'},
+  char kata[15][15]={ {'t','g','b','w','w','i','n','t','e','r','w','s','e','s','n'},
                      {'a','a','u','n','t','t','m','m','h','f','o','o','d','n','b'},
                      {'j','l','w','c','q','l','d','z','m','p','m','v','d','m','r'},
                      {'a','s','a','g','m','q','u','w','v','v','b','s','o','h','i'},
@@ -23,43 +22,39 @@ int cari_kata(*(word));
                      {'p','d','c','r','z','m','s','n','g','r','d','n','r','p','z'},
                      {'o','h','n','k','z','w','a','t','e','r','j','g','t','r','a'}
                     };
-  
-  
-  //HORIZONTAL KE KANAN (dari kiri ke kanan)
-              for (int k=0;k<pjg;k++){
-                if (word[k]==kata[i][j+k]){
-                  cek=k;
-                  
-                }
-                else{
-                  break;
-                }
-              }
-              if (cek==pjg-1){
-                hasil+=1;
-              }
-              else{
-                hasil+=0;
-              }
-              cek=0;
-  
-  
+                  for (int i=0;i<15;i++){
+                    for (int j=0;j<15;j++){
+                      if (word[0]==kata[i][j]{
+                        
+  //HORIZONTAL KE KANAN (dari kiri kekanan)
+                        for (int k=0;k<pjg;k++){
+                          if (word[k]==kata[i][j+k]){
+                            cek=k;
+                          }
+                          else{
+                            break;
+                          }
+                          else{
+                            hasil+=0;
+                          }
+                          cek=0;
+                          
   //HORIZONTAL KE KIRI (dari kanan ke kiri)
-              for(int k=0;k<pjg;k++){
-                if (word[k]==kata[i][j-k]){
-                  cek=k;
-                }
-                else{
-                  break;
-                }
-              }
-              if (cek==pjg-1){
-                hasil+=1;
-              }
-              else{
-                hasil+=0;
-              }
-              cek=0;
+                          for (int k=0;k<pjg;k++){
+                            if (word[k]==kata[i][j-k]){
+                              cek=k;
+                            }
+                            else{
+                              break;
+                            }
+                          }
+                          if (cek==pjg-1) {
+                            hasil+=1;
+                          }
+                          else{
+                            hasil+=0;
+                          }
+                          cek=0;
   
   
   //VERTIKAL KEBAWAH (dari atas kebawah)
@@ -112,7 +107,7 @@ int cari_kata(*(word));
               }
                   cek=0;
   
-  // DIAGONAL KANAN BAWAH (Dari atas ke bawah)
+  // DIAGONAL KANAN BAWAH (Dari atas ke bawah
               for (int k=0;k<pjg;k++){
                 if (word[k]==kata[i+k][j+k]){
                   cek=k;
@@ -128,40 +123,11 @@ int cari_kata(*(word));
                 hasil+=0;
               }
                   cek=0;
-
-  // DIAGONAL KIRI ATAS (dari bawah keatas)
-				for (int k=0;k<pjg;k++){
-					if (word[k]==kata[i-k][j-k]){
-						cek=k;
-					}
-					else{
-						break;
-					}
-				}
-				if (cek==pjg-1){
-					hasil+=1;
-				}
-				else{
-					hasil+=0;
-				}
-				cek=0;
+          }
+      }
+    }
                 
-    // DIAGONAL KIRI BAWAH (dari atas ke bawah)
-				for (int k=0;k<pjg;k++){
-					if (word[k]==kata[i+k][j-k]){
-						cek=k;
-					}
-					else{
-						break;
-					}
-				}
-				if (cek==pjg-1){
-					hasil+=1;
-				}
-				else{
-					hasil+=0;
-				}
-				cek=0;           
+             
   
               if(hasil>0){
                 cout<<"ADA"<<endl;
@@ -171,7 +137,7 @@ int cari_kata(*(word));
                 }
 }
    
-                //Program inti
+                //Program nti
                 int main()
                 {
                   cout<<"       =========================================================="<<endl;
