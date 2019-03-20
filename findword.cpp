@@ -94,7 +94,54 @@ int cari_kata(*(word));
                   hasil+=0;
                 }
                 cek=0;
+  // DIAGONAL KANAN ATAS (Dari bawah ke atas)
+              for (int k=0;k<pjg;k++){
+                if (word[k]==kata[i-k][j+k]){
+                  cek=k;
+                }
+                else{
+                  break;
+                }
+              }
+              if (cek==pjg-1){
+                hasil+=1;
+              }
+              else{
+                hasil+=0;
+              }
+                  cek=0;
   
+  // DIAGONAL KANAN BAWAH (Dari atas ke bawah
+              for (int k=0;k<pjg;k++){
+                if (word[k]==kata[i+k][j+k]){
+                  cek=k;
+                }
+                else{
+                  break;
+                }
+              }
+              if (cek==pjg-1){
+                hasil+=1;
+              }
+              else{
+                hasil+=0;
+              }
+                  cek=0;
+          }
+      }
+    }
+                
+             
+  
+              if(hasil>0){
+                cout<<"ADA"<<endl;
+              }
+                else{
+                      cout<<"TIDAK ADA"<<endl;
+                }
+}
+   
+                //Program nti
                 int main()
                 {
                   cout<<"       =========================================================="<<endl;
@@ -132,6 +179,30 @@ int cari_kata(*(word));
                   
                      
                                              
+                  
+                  //Input Katanya
+                  for (int i=0;i<batas;i++){
+                    cout<<i+1<<". ";
+                    cin>>word[i];
+                  }
+                  
+                  //Outputan Katanya
+                  cout<<"          ================================================="<<endl;
+                  cout<<"          =               Hasil Seleksi Kata              ="<<endl;
+                  cout<<"          ================================================="<<endl;
+                  
+                  for(int i=0;i<batas;i++){
+                    cout<<i+1<<". ";
+                    cari_kata(*(word+i));
+                  }
+                  
+                  cout<<endl<<endl<<endl<<endl;
+                  cout<<"          =================================================================="<<endl;
+                  cout<<"          =  Terimakasih Telah Meluangkan Waktu untuk Belajar Teliti!! ^^  ="<<endl;
+                  cout<<"          =================================================================="<<endl;
+                  
+                return 0;
+                }
                  
   
  
